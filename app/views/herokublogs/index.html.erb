@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Herokublogs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Context</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @herokublogs.each do |herokublog| %>
+      <tr>
+        <td><%= herokublog.title %></td>
+        <td><%= herokublog.context %></td>
+        <td><%= link_to 'Show', herokublog %></td>
+        <td><%= link_to 'Edit', edit_herokublog_path(herokublog) %></td>
+        <td><%= link_to 'Destroy', herokublog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Herokublog', new_herokublog_path %>

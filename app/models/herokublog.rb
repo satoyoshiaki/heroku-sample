@@ -1,0 +1,2 @@
+class Herokublog < ApplicationRecord
+end

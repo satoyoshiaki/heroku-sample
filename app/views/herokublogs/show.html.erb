@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @herokublog.title %>
+</p>
+
+<p>
+  <strong>Context:</strong>
+  <%= @herokublog.context %>
+</p>
+
+<%= link_to 'Edit', edit_herokublog_path(@herokublog) %> |
+<%= link_to 'Back', herokublogs_path %>
