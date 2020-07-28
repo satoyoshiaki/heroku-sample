@@ -2,6 +2,7 @@
   "name": "heroku_test_app",
   "private": true,
   "dependencies": {
+    "bootstrap": "4",
     "jquery": "^3.5.1"
   }
 }
